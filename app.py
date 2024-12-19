@@ -9,6 +9,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.callbacks.base import BaseCallbackHandler
+import os
+
+os.makedirs('./.cache/files/', exist_ok=True)
+os.makedirs('./.cache/embeddings/', exist_ok=True)
 
 
 st.set_page_config(
